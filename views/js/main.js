@@ -517,9 +517,9 @@ function updatePositions() {
   console.log("document.body.scrollTop = " + document.body.scrollTop);
   console.log('============== New call to updatePositions ============');
   for (var i = 0; i < items.length; i++) {
-    console.log("i = " + i);
-    console.log("i % 5 = " + (i % 5));
-    console.log("phase = " + phases);
+    // console.log("i = " + i);
+    // console.log("i % 5 = " + (i % 5));
+    // console.log("phase = " + phases);
     items[i].style.left = items[i].basicLeft + 100 * phases[i % 5] + 'px';
   }
 
