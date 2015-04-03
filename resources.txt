@@ -1,0 +1,8 @@
+Resources and links used for P4:
+
+1) http://cssminifier.com/
+2) http://www.crockford.com/javascript/jsmin.html
+3) https://css-tricks.com/snippets/css/using-font-face/
+4) https://developers.google.com/web/fundamentals/performance/critical-rendering-path/ and a lot of the links and articles that this web provides.
+6) https://developers.google.com/speed/pagespeed/insights/ and the links that are provided to improve what PageSpeed Insights suggests, plus the optimized images that they provide too.
+7) I have read almost all posts in discussion forums too.
