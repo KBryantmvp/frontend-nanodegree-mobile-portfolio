@@ -515,13 +515,17 @@ function updatePositions() {
 
   // Creates an array of 5 phases so we reduce the calculations since
   // there are only 5 possible phases for each pizza
-  var phase0 = Math.sin(x);
-  var phase1 = Math.sin(x + 1);
-  var phase2 = Math.sin(x + 2);
-  var phase3 = Math.sin(x + 3);
-  var phase4 = Math.sin(x + 4);
+  // var phase0 = Math.sin(x);
+  // var phase1 = Math.sin(x + 1);
+  // var phase2 = Math.sin(x + 2);
+  // var phase3 = Math.sin(x + 3);
+  // var phase4 = Math.sin(x + 4);
+  // var phases = [];
+  // phases.push(phase0, phase1, phase2, phase3, phase4);
   var phases = [];
-  phases.push(phase0, phase1, phase2, phase3, phase4);
+  for (var i = 0; i < 5; i++) {
+    phases.push(Math.sin(x + i));
+  }
 
   for (var i = 0; i < items.length; i++) {
     items[i].style.left = items[i].basicLeft + 100 * phases[i % 5] + 'px';

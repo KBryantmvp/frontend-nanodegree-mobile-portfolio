@@ -1,5 +1,22 @@
 Open http://kbryantmvp.github.io/frontend-nanodegree-mobile-portfolio/ for evaluating.
 
+## Optimizations in views/js/main.js
+
+1) All the query selectors were changed by getElementById or getElementByClassName since it is a faster way to access elements.
+
+2) Modified the function changePizzaSizes in order to make faster calculations:
+    - Created an array with all the randomPizzaContainers
+    - Passed to the determineDx function only the first element of the array created earlier since rest of elements are equal and we would be wasting time by repeating the same calculations over and over again.
+    - Same for newwidth. We only calculate it for the first randomPizzaContainer
+    - Finally, in the 'for' loop, we apply the newwidth to each randomPizzaContainer.
+
+3) Modified the function updatePositions in order to make faster calculations too:
+    - Created a variable 'x' to store the value of (document.body.scrollTop / 1250) and took it out of the 'for' loop so we do not need to calculate it in each iteration.
+    - There are only 5 possible phases for each pizza item, so we also did these calculations outside of the 'for' loop. I just modified the way I did this in my first submission since the suggestions from the udacity reviewer were actually a more elegant solution.
+
+4) Reduced the number of pizzas created to 40 instead of 200.
+
+
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
