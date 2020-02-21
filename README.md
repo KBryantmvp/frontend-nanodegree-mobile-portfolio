@@ -1,4 +1,4 @@
-Open http://kbryantmvp.github.io/frontend-nanodegree-mobile-portfolio/ for evaluating.
+Open http://davidaguirrel.github.io/frontend-nanodegree-mobile-portfolio/ for evaluating.
 
 ## Optimizations in views/js/main.js
 
